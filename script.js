@@ -137,47 +137,34 @@ featureCards.forEach((card, index) => {
     cardObserver.observe(card);
 });
 
-// Mobile menu toggle (for future enhancement)
+// Mobile menu toggle
 const createMobileMenu = () => {
     const header = document.querySelector('.header-content');
     if (!header || header.querySelector('.mobile-menu-btn')) return;
+    const nav = header.querySelector('.nav');
+    if (!nav) return;
+
     const mobileMenuBtn = document.createElement('button');
     mobileMenuBtn.className = 'mobile-menu-btn';
+    mobileMenuBtn.setAttribute('aria-label', 'Toggle navigation menu');
     mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-    mobileMenuBtn.style.display = 'none';
-    
-    // Add mobile menu button styles
-    const style = document.createElement('style');
-    style.textContent = `
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block !important;
-                background: none;
-                border: none;
-                font-size: 24px;
-                color: var(--wine-primary);
-                cursor: pointer;
-            }
-            .nav {
-                display: none;
-                width: 100%;
-            }
-            .nav.active {
-                display: block;
-            }
-            .nav ul {
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 0;
-            }
-        }
-    `;
-    document.head.appendChild(style);
-    
-    header.insertBefore(mobileMenuBtn, header.querySelector('.nav'));
-    
+
+    header.insertBefore(mobileMenuBtn, nav);
+
     mobileMenuBtn.addEventListener('click', () => {
-        document.querySelector('.nav').classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close the menu when a nav link is clicked
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => nav.classList.remove('active'));
+    });
+
+    // Close the menu when tapping outside of it
+    document.addEventListener('click', (e) => {
+        if (nav.classList.contains('active') && !nav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            nav.classList.remove('active');
+        }
     });
 };
 

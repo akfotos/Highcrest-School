@@ -2035,16 +2035,6 @@ html {
         gap: 14px;
     }
 
-    .about-page .nav {
-        display: block;
-        order: 0;
-        width: auto;
-    }
-
-    .about-page .nav ul {
-        gap: 14px;
-    }
-
     .about-page .contact-btn {
         padding: 9px 14px;
     }
@@ -2087,16 +2077,6 @@ html {
         gap: 14px;
     }
 
-    .admissions-page .nav {
-        display: block;
-        order: 0;
-        width: auto;
-    }
-
-    .admissions-page .nav ul {
-        gap: 14px;
-    }
-
     .admissions-page .contact-btn {
         padding: 9px 14px;
     }
@@ -2136,16 +2116,6 @@ html {
         gap: 14px;
     }
 
-    .classrooms-page .nav {
-        display: block;
-        order: 0;
-        width: auto;
-    }
-
-    .classrooms-page .nav ul {
-        gap: 14px;
-    }
-
     .classrooms-page .contact-btn {
         padding: 9px 14px;
     }
@@ -2181,16 +2151,6 @@ html {
     }
 
     .contact-page .header-content {
-        gap: 14px;
-    }
-
-    .contact-page .nav {
-        display: block;
-        order: 0;
-        width: auto;
-    }
-
-    .contact-page .nav ul {
         gap: 14px;
     }
 
@@ -2980,6 +2940,15 @@ body::before {
     }
 }
 
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--wine-primary);
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .container {
         width: min(100% - 30px, 580px);
@@ -2987,14 +2956,34 @@ body::before {
 
     .header-content {
         flex-wrap: nowrap;
+        position: relative;
     }
 
     .nav {
         display: none;
     }
 
+    .nav.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        padding: 10px 0;
+        z-index: 999;
+    }
+
+    .nav.active ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 0;
+    }
+
     .mobile-menu-btn {
-        order: 2;
+        display: block;
     }
 
     .header-actions {
