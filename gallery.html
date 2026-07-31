@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse photos from Highcrest School events, classrooms, and celebrations.">
+    <title>Gallery | Highcrest School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body class="gallery-page gallery-locked">
+
+    <div class="gallery-lock" id="galleryLock">
+        <div class="gallery-lock-bg"></div>
+        <div class="gallery-lock-card">
+            <div class="gallery-lock-icon">
+                <i class="fas fa-lock" aria-hidden="true"></i>
+            </div>
+            <h2>Private Gallery</h2>
+            <p>Sign in to view Highcrest School's photo collection.</p>
+            <form id="galleryLockForm" autocomplete="off">
+                <div class="gallery-lock-field">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <input type="email" id="galleryEmail" placeholder="Email address" required>
+                </div>
+                <div class="gallery-lock-field">
+                    <i class="fas fa-key" aria-hidden="true"></i>
+                    <input type="password" id="galleryPassword" placeholder="Password" required>
+                    <button type="button" class="gallery-lock-toggle" id="galleryToggle" aria-label="Show password">
+                        <i class="fas fa-eye" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <p class="gallery-lock-error" id="galleryLockError">Incorrect email or password.</p>
+                <button type="submit" class="gallery-lock-submit">Unlock Gallery <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="gallery-page-content" id="galleryPageContent">
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-envelope" aria-hidden="true"></i> info@highcrest.edu.gh</span>
+                    <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Adenta Municipality</span>
+                </div>
+                <div class="social-links" aria-label="Social media links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a class="logo" href="index.html" aria-label="Highcrest School home">
+                    <img src="assets/logo.png" alt="Highcrest School logo">
+                </a>
+                <nav class="nav" aria-label="Primary navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classrooms.html">Classrooms</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+                    </ul>
+                </nav>
+                <a class="contact-btn" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-hero">
+            <div class="container">
+                <p class="eyebrow">Highcrest School</p>
+                <h2>Our Gallery</h2>
+                <p>Moments from the life of our school community.</p>
+            </div>
+        </section>
+
+        <section class="gallery-content">
+            <div class="container">
+                <div class="gallery-grid" data-aos="fade-in">
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="0" data-index="0">
+                        <img src="Highcrest%20School/_T5A0019.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" data-index="1">
+                        <img src="Highcrest%20School/_T5A0020.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-index="2">
+                        <img src="Highcrest%20School/_T5A9881.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" data-index="3">
+                        <img src="Highcrest%20School/_T5A0077.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-index="4">
+                        <img src="Highcrest%20School/_T5A0402.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" data-index="5">
+                        <img src="Highcrest%20School/_T5A0094.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" data-index="6">
+                        <img src="Highcrest%20School/_T5A0018.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" data-index="7">
+                        <img src="Highcrest%20School/_T5A0156.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" data-index="8">
+                        <img src="Highcrest%20School/_T5A0074.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" data-index="9">
+                        <img src="Highcrest%20School/_T5A9954.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="0" data-index="10">
+                        <img src="Highcrest%20School/_T5A0155.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" data-index="11">
+                        <img src="Highcrest%20School/_T5A0148.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-index="12">
+                        <img src="Highcrest%20School/_T5A9853.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" data-index="13">
+                        <img src="Highcrest%20School/_T5A0076.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-index="14">
+                        <img src="Highcrest%20School/_T5A0147.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" data-index="15">
+                        <img src="Highcrest%20School/_T5A9882.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" data-index="16">
+                        <img src="Highcrest%20School/_T5A9846.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" data-index="17">
+                        <img src="Highcrest%20School/_T5A0149.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" data-index="18">
+                        <img src="Highcrest%20School/_T5A9879.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" data-index="19">
+                        <img src="Highcrest%20School/_T5A9869.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="0" data-index="20">
+                        <img src="Highcrest%20School/_T5A0049.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" data-index="21">
+                        <img src="Highcrest%20School/_T5A0048.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-index="22">
+                        <img src="Highcrest%20School/_T5A0403.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" data-index="23">
+                        <img src="Highcrest%20School/_T5A0139.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-index="24">
+                        <img src="Highcrest%20School/_T5A0090.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" data-index="25">
+                        <img src="Highcrest%20School/_T5A9868.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" data-index="26">
+                        <img src="Highcrest%20School/_T5A9878.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" data-index="27">
+                        <img src="Highcrest%20School/_T5A0091.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" data-index="28">
+                        <img src="Highcrest%20School/_T5A0065.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" data-index="29">
+                        <img src="Highcrest%20School/_T5A0089.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="0" data-index="30">
+                        <img src="Highcrest%20School/_T5A9877.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" data-index="31">
+                        <img src="Highcrest%20School/_T5A0088.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-index="32">
+                        <img src="Highcrest%20School/_T5A9870.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" data-index="33">
+                        <img src="Highcrest%20School/_T5A0179.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-index="34">
+                        <img src="Highcrest%20School/_T5A9894.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" data-index="35">
+                        <img src="Highcrest%20School/_T5A0036.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" data-index="36">
+                        <img src="Highcrest%20School/_T5A0037.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" data-index="37">
+                        <img src="Highcrest%20School/_T5A0126.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" data-index="38">
+                        <img src="Highcrest%20School/_T5A0017.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" data-index="39">
+                        <img src="Highcrest%20School/_T5A0014.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="0" data-index="40">
+                        <img src="Highcrest%20School/_T5A0152.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" data-index="41">
+                        <img src="Highcrest%20School/_T5A9884.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-index="42">
+                        <img src="Highcrest%20School/_T5A9893.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="150" data-index="43">
+                        <img src="Highcrest%20School/_T5A0158.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-index="44">
+                        <img src="Highcrest%20School/_T5A0047.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="250" data-index="45">
+                        <img src="Highcrest%20School/_T5A0046.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" data-index="46">
+                        <img src="Highcrest%20School/_T5A0180.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" data-index="47">
+                        <img src="Highcrest%20School/_T5A9899.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" data-index="48">
+                        <img src="Highcrest%20School/_T5A9911.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-up" data-aos-delay="450" data-index="49">
+                        <img src="Highcrest%20School/_T5A9849.jpg" alt="Highcrest School" loading="lazy">
+                        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="lightbox-close" aria-label="Close"><i class="fas fa-times" aria-hidden="true"></i></button>
+        <button class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+        <img class="lightbox-img" src="" alt="Gallery preview">
+        <button class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Highcrest School logo">
+                    <h2>Highcrest School</h2>
+                    <p>Empowering minds, shaping futures.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="classrooms.html">Classrooms</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 2 Kola Lane Adenta Housing Down, Adenta Municipality, Accra, Ghana</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+233303941403">+233 303 941 403</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+233302527734">+233 302 527 734</a></p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+233204624519">+233 204 624 519</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@highcrest.edu.gh">info@highcrest.edu.gh</a></p>
+                    <p><i class="fas fa-globe" aria-hidden="true"></i> <a href="https://www.highcrest.edu.gh" target="_blank" rel="noopener noreferrer">www.highcrest.edu.gh</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Highcrest School. All rights reserved.</p>
+                <div class="footer-meta">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('.lightbox-img');
+        const items = Array.from(document.querySelectorAll('.gallery-item'));
+        const images = items.map(item => item.querySelector('img').src);
+        let currentIndex = 0;
+
+        function showImage(index) {
+            currentIndex = (index + images.length) % images.length;
+            lightboxImg.src = images[currentIndex];
+        }
+
+        items.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                showImage(index);
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        document.querySelector('.lightbox-close').addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        document.querySelector('.lightbox-prev').addEventListener('click', () => showImage(currentIndex - 1));
+        document.querySelector('.lightbox-next').addEventListener('click', () => showImage(currentIndex + 1));
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+            if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+            if (e.key === 'ArrowRight') showImage(currentIndex + 1);
+        });
+    </script>
+
+    <script>
+        (function () {
+            const AUTH_EMAIL = 'amenyahemmanuel@gmail.com';
+            const AUTH_PASSWORD = 'Blackvolta358.??/';
+            const SESSION_KEY = 'galleryUnlocked';
+
+            const body = document.body;
+            const lock = document.getElementById('galleryLock');
+            const form = document.getElementById('galleryLockForm');
+            const emailInput = document.getElementById('galleryEmail');
+            const passwordInput = document.getElementById('galleryPassword');
+            const errorMsg = document.getElementById('galleryLockError');
+            const toggleBtn = document.getElementById('galleryToggle');
+            const card = lock.querySelector('.gallery-lock-card');
+
+            function unlockGallery(skipAnimation) {
+                body.classList.remove('gallery-locked');
+                if (skipAnimation) {
+                    lock.style.display = 'none';
+                    return;
+                }
+                lock.classList.add('gallery-lock-unlocking');
+                setTimeout(() => { lock.style.display = 'none'; }, 700);
+            }
+
+            if (sessionStorage.getItem(SESSION_KEY) === 'true') {
+                unlockGallery(true);
+            }
+
+            toggleBtn.addEventListener('click', () => {
+                const isPassword = passwordInput.type === 'password';
+                passwordInput.type = isPassword ? 'text' : 'password';
+                toggleBtn.innerHTML = isPassword
+                    ? '<i class="fas fa-eye-slash" aria-hidden="true"></i>'
+                    : '<i class="fas fa-eye" aria-hidden="true"></i>';
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = emailInput.value.trim().toLowerCase();
+                const password = passwordInput.value;
+
+                if (email === AUTH_EMAIL && password === AUTH_PASSWORD) {
+                    errorMsg.classList.remove('show');
+                    sessionStorage.setItem(SESSION_KEY, 'true');
+                    unlockGallery(false);
+                } else {
+                    errorMsg.classList.add('show');
+                    card.classList.remove('gallery-lock-shake');
+                    requestAnimationFrame(() => card.classList.add('gallery-lock-shake'));
+                    passwordInput.value = '';
+                }
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+    </div>
+</body>
+</html>
