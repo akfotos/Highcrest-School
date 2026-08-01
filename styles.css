@@ -2995,6 +2995,10 @@ body::before {
         display: none;
     }
 
+    .header-content > .contact-btn {
+        display: none;
+    }
+
     .nav-contact-item {
         display: block;
         margin-top: 10px;

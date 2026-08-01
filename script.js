@@ -152,7 +152,7 @@ const createMobileMenu = () => {
     header.insertBefore(mobileMenuBtn, nav);
 
     // Move the "Contact Us" button into the mobile dropdown menu
-    const contactBtn = header.querySelector('.header-actions .contact-btn');
+    const contactBtn = header.querySelector('.contact-btn');
     const navList = nav.querySelector('ul');
     if (contactBtn && navList && !navList.querySelector('.nav-contact-item')) {
         const contactItem = document.createElement('li');
