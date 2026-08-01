@@ -2949,6 +2949,10 @@ body::before {
     cursor: pointer;
 }
 
+.nav-contact-item {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .container {
         width: min(100% - 30px, 580px);
@@ -2984,13 +2988,19 @@ body::before {
 
     .mobile-menu-btn {
         display: block;
-    }
-
-    .header-actions {
         margin-left: auto;
     }
 
-    .contact-btn {
+    .header-actions {
+        display: none;
+    }
+
+    .nav-contact-item {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav-contact-item .contact-btn {
         min-height: 38px;
         padding: 9px 13px;
         font-size: 12px;
